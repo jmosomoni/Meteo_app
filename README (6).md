@@ -8,14 +8,14 @@ Projet d'apprentissage front-end (React, TypeScript, Tailwind).
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - Recherche de la météo par **nom de ville**
 - Affichage de la **température**, du **lieu**, de l'**humidité** et du **vent**
 - **Icône météo dynamique** (SVG animés) selon le code météo et jour/nuit
 - Gestion des **erreurs** (ville introuvable, problème de connexion)
 
-## 🛠️ Technologies
+## Technologies
 
 - **React 19** + **TypeScript**
 - **Vite** (serveur de dev & build)
@@ -24,7 +24,7 @@ Projet d'apprentissage front-end (React, TypeScript, Tailwind).
 
 ---
 
-## 🔑 Obtenir une clé API WeatherAPI (gratuit)
+## Obtenir une clé API WeatherAPI (gratuit)
 
 L'application interroge l'API **WeatherAPI** pour récupérer la météo. Il faut
 **ta propre clé API** (gratuite). Une clé API, c'est un **identifiant personnel**
@@ -35,7 +35,7 @@ qui t'autorise à utiliser le service.
 3. Connecte-toi et ouvre ton **tableau de bord (Dashboard)**.
 4. Copie ta **clé API** (une longue suite de lettres et chiffres).
 
-> 💡 L'offre gratuite suffit largement pour ce projet.
+ L'offre gratuite suffit largement pour ce projet.
 
 ## 🔧 Mettre la clé dans le projet
 
@@ -49,11 +49,11 @@ const res = await fetch(
 );
 ```
 
-> 🔎 Astuce : dans VS Code, `Ctrl + F` puis cherche `key=` pour la trouver vite.
+>  Astuce : dans VS Code, `Ctrl + F` puis cherche `key=` pour la trouver vite.
 
 ---
 
-## 🚀 Installation & lancement
+## Installation & lancement
 
 ```bash
 # 1. Installer les dépendances (la première fois)
@@ -66,7 +66,7 @@ npm run dev
 L'application démarre sur **http://localhost:5173**.
 Pour l'arrêter : `Ctrl + C` dans le terminal.
 
-## 📦 Scripts disponibles
+## Scripts disponibles
 
 ```bash
 npm run dev       # serveur de développement (rechargement auto)
@@ -77,7 +77,7 @@ npm run lint      # analyse du code (oxlint)
 
 ---
 
-## 🧠 Comment ça marche (le flux)
+## Comment ça marche (le flux)
 
 ```
 Utilisateur tape une ville ──► fetch() vers WeatherAPI (avec la clé)
@@ -92,14 +92,7 @@ Utilisateur tape une ville ──► fetch() vers WeatherAPI (avec la clé)
 - L'état `meteo` stocke le résultat → l'interface se met à jour automatiquement.
 - En cas de souci, l'état `erreur` affiche un message.
 
-## 📚 Ce que j'ai appris
-
-- Les **composants** React et les **hooks** (`useState`)
-- Les **appels API** asynchrones (`fetch`, `async/await`) et la gestion d'erreurs
-- Le **typage** des données avec TypeScript
-- La mise en page avec **Tailwind CSS**
-
-## 🔜 Améliorations possibles
+## Améliorations possibles
 
 - Prévisions sur plusieurs jours
 - Géolocalisation automatique
