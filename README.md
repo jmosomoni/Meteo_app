@@ -56,7 +56,8 @@ const res = await fetch(
 ## Installation & lancement
 
 ```bash
-# 1.cd training        # ← se placer dans le bon dossier d'abord
+# 1. Se placer dans le dossier training d'abord
+cd training       
 
 # 2. Installer les dépendances (la première fois)
 npm install
