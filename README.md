@@ -69,17 +69,6 @@ npm run dev
 L'application démarre sur **http://localhost:5173**.
 Pour l'arrêter : `Ctrl + C` dans le terminal.
 
-## Scripts disponibles
-
-```bash
-npm run dev       # serveur de développement (rechargement auto)
-npm run build     # build de production
-npm run preview   # prévisualiser le build
-npm run lint      # analyse du code (oxlint)
-```
-
----
-
 ## Comment ça marche (le flux)
 
 ```
