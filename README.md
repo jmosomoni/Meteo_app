@@ -56,10 +56,12 @@ const res = await fetch(
 ## Installation & lancement
 
 ```bash
-# 1. Installer les dépendances (la première fois)
+# 1.cd training        # ← se placer dans le bon dossier d'abord
+
+# 2. Installer les dépendances (la première fois)
 npm install
 
-# 2. Lancer le serveur de développement
+# 3. Lancer le serveur de développement
 npm run dev
 ```
 
