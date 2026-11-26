@@ -1,4 +1,4 @@
-# 🌤️ Application Météo — React
+# Application Météo — React
 
 Application web qui affiche la météo en temps réel d'une ville : température,
 conditions, humidité et vent, avec une icône dynamique selon le temps et le
@@ -8,14 +8,14 @@ Projet d'apprentissage front-end (React, TypeScript, Tailwind).
 
 ---
 
-## ✨ Fonctionnalités
+## Fonctionnalités
 
 - Recherche de la météo par **nom de ville**
 - Affichage de la **température**, du **lieu**, de l'**humidité** et du **vent**
 - **Icône météo dynamique** (SVG animés) selon le code météo et jour/nuit
 - Gestion des **erreurs** (ville introuvable, problème de connexion)
 
-## 🛠️ Technologies
+## Technologies
 
 - **React 19** + **TypeScript**
 - **Vite** (serveur de dev & build)
@@ -24,7 +24,7 @@ Projet d'apprentissage front-end (React, TypeScript, Tailwind).
 
 ---
 
-## 🔑 Obtenir une clé API WeatherAPI (gratuit)
+## Obtenir une clé API WeatherAPI (gratuit)
 
 L'application interroge l'API **WeatherAPI** pour récupérer la météo. Pour que
 ça marche, il faut **ta propre clé API** (gratuite). C'est quoi une clé API ?
@@ -38,14 +38,14 @@ C'est un **mot de passe personnel** qui t'autorise à utiliser le service.
 4. Ta **clé API** (API Key) y est affichée — une longue suite de lettres et chiffres.
 5. **Copie** cette clé : c'est elle qu'on va mettre dans le projet (voir ci-dessous).
 
-> 💡 L'offre gratuite suffit largement pour ce projet (météo actuelle, plusieurs
+>  L'offre gratuite suffit largement pour ce projet (météo actuelle, plusieurs
 > milliers d'appels par mois).
 
 ---
 
-## 🔒 Configurer la clé dans le projet (sans l'exposer)
+##  Configurer la clé dans le projet (sans l'exposer)
 
-⚠️ **Règle d'or : la clé ne doit JAMAIS être écrite en dur dans le code.**
+ **Règle d'or : la clé ne doit JAMAIS être écrite en dur dans le code.**
 Si elle est dans un fichier publié sur GitHub, n'importe qui peut la voler et
 l'utiliser à ta place. On la met donc dans un fichier **`.env`**, qui n'est
 **pas** envoyé sur GitHub (il est ignoré par `.gitignore`).
@@ -68,13 +68,13 @@ l'utiliser à ta place. On la met donc dans un fichier **`.env`**, qui n'est
    );
    ```
 
-> 🛡️ Si ta clé a déjà été exposée (collée quelque part de public, poussée sur
+>  Si ta clé a déjà été exposée (collée quelque part de public, poussée sur
 > GitHub…), considère-la comme **compromise** : régénère-en une nouvelle depuis
 > le dashboard WeatherAPI.
 
 ---
 
-## 🚀 Installation & lancement
+## Installation & lancement
 
 ```bash
 # 1. Installer les dépendances (la première fois)
@@ -89,7 +89,7 @@ npm run dev
 
 L'application démarre sur **http://localhost:5173**.
 
-## 📦 Scripts disponibles
+## Scripts disponibles
 
 ```bash
 npm run dev       # serveur de développement (rechargement auto)
@@ -100,7 +100,7 @@ npm run lint      # analyse du code (oxlint)
 
 ---
 
-## 🧠 Comment ça marche (le flux)
+## Comment ça marche (le flux)
 
 ```
 Utilisateur tape une ville ──► fetch() vers WeatherAPI (avec la clé)
@@ -115,15 +115,7 @@ Utilisateur tape une ville ──► fetch() vers WeatherAPI (avec la clé)
 - L'état `meteo` stocke le résultat → l'interface se met à jour automatiquement.
 - En cas de souci, l'état `erreur` affiche un message.
 
-## 📚 Ce que j'ai appris
-
-- Les **composants** React et les **hooks** (`useState`)
-- Les **appels API** asynchrones (`fetch`, `async/await`) et la gestion d'erreurs
-- Le **typage** des données avec TypeScript
-- La mise en page avec **Tailwind CSS**
-- L'importance de **ne pas exposer une clé API** (variables d'environnement `.env`)
-
-## 🔜 Améliorations possibles
+## Améliorations possibles
 
 - Prévisions sur plusieurs jours
 - Géolocalisation automatique
